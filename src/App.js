@@ -24,6 +24,7 @@ this.setState({persons: [
 ]})
 }
 
+//handler for changing the name through input field
 nameChangedHandler = (event)=>{
   this.setState({
     persons: [
@@ -34,6 +35,7 @@ nameChangedHandler = (event)=>{
 })
 }
 
+//on the button conditionally rendering Person components
 togglePersonsHandler =()=>{
 const doesShow = this.state.showPersons;
 this.setState ({showPersons: !doesShow})
